@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR&display=swap');
+
+.Logo p{
+    display: flex;
+    justify-content: center;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 100px;
+    font-style: normal;
+    font-size: 80px;
+
+    margin: 0px;
+}
+
+#hr1{
+    display: flex;
+    justify-content: center;
+
+    margin: 30px;
+    margin-bottom: 50px;
+    border: 2px solid #333;
+    border-radius: 20px;
+}
+#hr2{
+    display: flex;
+    justify-content: center;
+    
+    margin: 30px;
+    margin-top: 20px;
+    border: 2px solid #333;
+    border-radius: 20px;
+}
+
+.ob{
+    display: flex;
+    justify-content: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.box{
+    position: relative;
+    border: 3.3px solid #333;
+    width: 460px;
+    height: 840px;
+    margin-bottom: 40px;
+
+    display: inline-block;
+    vertical-align: top;
+}
+
+#button1{
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    bottom: 20px;
+    left: 33%;
+    transform: translateX(-50%);
+}
+#button2{
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    bottom: 20px;
+    left: 66%;
+    transform: translateX(-50%);
+}
+
+.fstPT{
+    width: 90%;
+}
+
+.img-box{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.word-En{
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 120;
+    font-style: normal;
+
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+    font-size: larger;
+}
+
+.word{
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+
+    font-size: larger;
+}
+
+.ex{
+    display: flex;
+    
+    font-family: "IBM Plex Sans KR", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.7em;
+
+    justify-content: center;
+    margin-bottom: 20px;
+}

@@ -1,0 +1,19 @@
+/* 빈 공간 만들기 */
+.book1{
+    /* list-style-type: circle; */
+    /* list-style-type: square; */
+    /* list-style-image: url('../images/mail.png'); */
+    list-style-type: none;
+}
+
+/* 배열 숫자 표기 방법 */
+
+.book2{
+    /* list-style-type: decimal-leading-zero; */
+    /* list-style-type: upper-roman; */
+    
+    /* list-style-type: lower-alpha; */
+    list-style-type: upper-alpha outside;
+    padding: 20px;
+}
+

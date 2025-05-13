@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap');
+
+.container {
+    display: flex;
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+
+.box {
+    width: 96%;
+    height: 300px;
+    border: 0.1px solid gray;
+    border-radius: 8px;
+    margin-top: 24px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.imgbox {
+    width: 16%;
+    height: 80%;
+    border: 0.1px solid gray;
+    margin-top: 24px;
+    margin-left: 36px;
+    margin-right: 24px;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Tagesschrift", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 70px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.text {
+    text-align: left;
+    font-size: 18px;
+}
+
+.stext {
+    font-size: 14px;
+    color: gray;
+    text-decoration:line-through;
+}
+
+.moneytext {
+    font-size: 24px;
+}
+
+.redcolor {
+    color: red;
+}
+
+p {
+    margin: 0px;
+}
+
+.review {
+    font-size: 12px;
+}
+
+.buy {
+    display: flex;
+    font-size: 18px;
+    /* margin-left: 100px; */
+    justify-content: space-between;
+}
+
+button {
+    margin: 10px;
+    border-radius: 12px;
+    width: 180px;
+    height: 48px;
+    /* margin-left: 50px;
+    margin-right: 50px; */
+    font-size: 16px;
+}
+
+.button1 {
+    position: absolute;
+    right: 30%;
+    
+}
+
+.button2 {
+    position: absolute;
+    right: 10%;
+}
+
+button:active {
+    transform: scale(0.95); /* 눌렸을 때 크기를 줄여서 눌리는 느낌을 줌 */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 눌릴 때 그림자 효과 */
+}
+
+button:hover {
+    background-color: #52ceff;
+}
+
+button:focus {
+    outline: none;
+}

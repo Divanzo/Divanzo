@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            color: black;
+            text-align: center;
+        }
+
+        /* 임폴턴트로 얘가 효과 적용 */
+        h1{
+            text-align: center;
+            color: brown !important;
+        }
+
+        /* 마지막으로 설정한게 덮어 씌어져서 표시됨 */
+        p{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1 style="color: green;">레드향</h1>
+
+    <p style="color: red;">껍질에 붉은 빛이 돌아 레드향이라 불린다.</p>
+    <!-- 인라인으올 설정했기에 얜 다른 p태그들과는 차별되고, 혼자만 효과가 들어감 -->
+    
+    <p>레드향은 한라봉과 귤을 교배한 것으로</p>
+    <p>이란 귤보다 2_3배 더 크고, 과육이 붉고 통통하다.</p>
+</body>
+</html>

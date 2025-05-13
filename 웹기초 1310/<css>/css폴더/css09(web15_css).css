@@ -1,0 +1,44 @@
+.container{
+    width: 700px;
+    height: 200px;
+    background-color: #eee;
+    border: 1px solid #222;
+    margin-bottom: 30px;
+    
+    display: flex;
+    flex-direction:/* 행 열 방향으로 배치지정 */;
+    flex-wrap: wrap/* 박스 공간 만큼 채우고 다못채우면 밑으로 내려가도록 한다. */;
+    /* align-content: space-around align-self 속성 돕는 것; */
+    flex-flow: /* direction 과 wrap을 다 사용하는 것 */;
+
+    justify-content: /* 전체 요소 위치 정렬: 시작점 끝 중간 */;
+    justify-content: /* 공백생성요소 */;
+
+    align-items: /* 위 중간 아래로 위치지정 ; base라인은 글자기준으로 맞춰줌*/;
+
+    gap: 20px;
+}
+
+
+/* #box1{
+    margin-left: auto;
+    padding: 20px;
+    align-self: flex-start;
+}
+
+#box2{
+    align-self: flex-end;
+}
+
+#box3{
+    align-self: center;
+} */
+
+
+
+.box {
+    padding: 5px 45px;
+    margin: 5px;
+    width: 80px;
+    background-color: palevioletred;
+}

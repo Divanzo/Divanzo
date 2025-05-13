@@ -1,0 +1,35 @@
+table{
+    /* border: 2px solid #000; */
+    /* caption-side: bottom; */
+    border-spacing: 10px ;
+    border-collapse: collapse;/* 선을 합쳐지게해서 선들로 연결한 것처럼 보임 */
+    width: 400px;
+    height: 300px;  
+}
+/* caption 명령을 따로 설정하면 캡션의 내용이 table 밑으로 내려간다. */
+
+caption{
+    caption-side: bottom;
+    text-align: left;   
+}
+
+/*
+th, td{
+    border: 2px double hsl(218, 100%, 59%);
+} 
+*/
+/* border: dotted-점, dashed-점선, double-빈선(색변경) */
+
+th{
+    border-bottom: 2px double blue;
+    border-top: 1px solid blue;
+    border-left: 1px solid blue;
+    border-right: 1px solid blue;
+
+    background-color: aqua;
+}
+
+td{
+    text-align: center;
+    border: 1px solid blue;
+}
