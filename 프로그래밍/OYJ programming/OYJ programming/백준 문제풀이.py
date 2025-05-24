@@ -117,10 +117,32 @@
 #         break
 # print(sum1)
 
-sen=list(input())
-Check=[0]*len(set(sen))
+# num=[]
+# for i in range(10):
+#     row=list(map(int, input().split()))
+#     num.append(row)
+
+# Fwone = [[0 for _ in range(10)] for _ in range(10)]
+
+# re=0
+# def island(num1, num2):
+#     if num1 < 0 or num1 >= 9 or num2 < 0 or num2 >= 10 or Fwone[num1][num2] == 1 or num[num1][num2] == 0:
+#         return
+#     Fwone[num1][num2] = 1
+
+#     island(num1 + 1, num2) 
+
+#     island(num1 , num2+ 1) 
+
+#     island(num1 - 1, num2)
+
+#     island(num1, num2 - 1)
 
 
+# for i in range(4):
+#     for j in range(5):
+#         if num[i][j] == 1 and Fwone[i][j] == 0:
+#             island(i, j)
+#             re+=1
 
-for i in Check:
-    print(i, end=' ')
+# print(f"number of islands : {re}")
