@@ -1,16 +1,76 @@
-# print("#"*25)
-# print(" 원리합계 계산 프로그램")
-# print("#"*25)
-# deposit=int(input("예금 금액(원):  "))
-# rate=float(input("이자율(%):  "))
-# d=int(input("예금 기간(년):  "))
-# print("#"*25)
+class Node:
+    def __init__(self, elem, next=None):
+        self.data = elem
+        self.link = next
 
-# result=deposit+(deposit*rate*0.01*d)
+class LinkedList:
+    def __init__(self):
+        self.head = None
 
-# print(f"{deposit}원을 {rate}%로 {d}년간 예치하면 원리합계는 {result:.0f}원 입니다.")
+def isEmpty(self):
+    return self.head is None
 
-projects=[[5,90,90],[1,90,70],[3,95,70],[2,85,85],[4,70,90]]
+def isFull(self):
+    return False
 
-for i in range(len(projects)):
-    
+def getNode(self, pos):
+    if pos<0:
+        return None
+    node = self.head
+
+    while pos>0 and node is not None:
+        node = node.link
+        pos -= 1
+
+    return node
+
+def getEntry(self, pos):
+    node = getNode(pos)
+    if node is None:
+        return None
+    else:
+        return node.data
+
+def insertNode(self, pos, elem):
+    before = getNode(pos-1)
+    if before is None:
+        node = Node(elem, self.head)
+    else:
+        before.link = none
+
+def delete(self, pos):
+    before = getNode(pos-1)
+    if before is None:
+        if self.head is not None:
+            self.head = self.head.link
+    else:
+        before.link = before.link.link
+
+def __str__(self):
+    arr = []
+    node = self.head
+    while node is not None:
+        arr.append(node.data)
+        node = node.link
+    return str(arr)
+
+if __name__ == "__main__":
+    L = LinkedList()
+    print(L)
+    L.insertNode(0, 10)
+    print(L)
+    L.insertNode(0, 20)
+    print(L)
+    L.insertNode(1, 30)
+    print(L)
+    L.insertNode(3, 40)
+    print(L)
+    L.insertNode(2, 50)
+    print(L)
+    L.delete(2)
+    print(L)
+    L.delete(3)
+    print(L)
+    L.delete(0)
+    print(L)
+    print(f"20의 위치: {L.findNode(20)}")

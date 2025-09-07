@@ -146,3 +146,134 @@
 #             re+=1
 
 # print(f"number of islands : {re}")
+
+#=================================================================
+# word=list(input())
+
+# clone1=word.copy()
+# clone2=word.copy()
+
+# clone1.sort()
+# alist = clone1
+
+# clone2.sort(reverse=True)
+# blist = clone2
+
+# sum1='0'
+# sum2='0'
+# for i in alist:
+#     sum1+=i
+# for i in blist:
+#     sum2+=i
+
+# sum1 = sum1.lstrip('0')
+# sum2 = sum2.lstrip('0')
+
+# sum1 = int(sum1)
+# sum2 = int(sum2)
+
+# print(sum2-sum1)
+#=================================================================
+
+# name=list(input().split())
+
+# votes=list(input().split())
+# result=[]
+
+# for i in name:
+#     sum1=0
+#     for j in votes:
+#         if i==j:
+#             sum1+=1
+#     solution={i:sum1}
+#     result.append(solution)
+
+# final_result = {}
+# for r in result:
+#     final_result.update(r)
+
+# sorted_result = sorted(final_result.items(), key=lambda x: x[1], reverse=True)
+
+# print(sorted_result[0][0],sorted_result[1][0])
+
+# Latte Americano Espresso
+# Latte Americano Espresso Latte Americano Americano Latte Latte Latte
+
+#=================================================================
+
+# n=int(input('정수를 입력하세요: '))
+# numlist=list(map(int, input().split()))
+# result=[]
+
+# for i in range(len(numlist)):
+#     for j in range(len(numlist)):
+#         if n-numlist[i]>n-numlist[j]:
+#             numlist[i], numlist[j] = numlist[j], numlist[i]
+#         elif n-numlist[i]==0:
+#             numlist.insert(0,numlist[i])
+#         else:
+#             numlist.append(numlist[i])
+
+# print(numlist)
+
+#==================================================================
+
+#웜 바이러스
+# n,m= map(int, input().split())
+# # n: 컴퓨터의 수, m: 연결된 컴퓨터 쌍의 수
+
+# # 그래프 초기화 (1번부터 시작하므로 n+1)
+# graph = [[] for _ in range(n + 1)]
+# visited = [False] * (n + 1)
+
+# # 연결 정보 저장
+# for _ in range(m):
+#     a, b = map(int, input().split())
+#     graph[a].append(b)
+#     graph[b].append(a)
+
+# # 큐 구현 (리스트로 직접)
+# queue = [1]
+# visited[1] = True
+# count = 0
+
+# # BFS 시작
+# while queue:
+#     current = queue[0]
+#     del queue[0]  # pop(0) 대신
+#     for neighbor in graph[current]:
+#         if not visited[neighbor]:
+#             visited[neighbor] = True
+#             queue.append(neighbor)
+#             count += 1
+
+# print(count)
+
+
+#DFS
+import sys
+#재귀 깊이 제한 뚫기
+sys.setrecursionlimit(10**6)
+
+a, b = map(int, input().split())
+
+graph = [[] for _ in range(a)]
+visited = [False] * a
+
+# 인접 리스트 구성 (0-indexed)
+for _ in range(b):
+    x, y = map(int, input().split())
+    graph[x-1].append(y-1)3
+    graph[y-1].append(x-1)
+
+def dfs(graph, start, visited):
+    visited[start] = True
+    count = 0
+    for i in graph[start]:
+        if visited[i]==False:
+            count += 1  # 감염 수 증가
+            count += dfs(graph, i, visited)  # 재귀로 더 깊이 감염 탐색
+    return count
+
+result = dfs(graph, 0, visited)
+print(result)

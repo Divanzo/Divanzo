@@ -1,1 +1,0 @@
-# hardStudy_web
