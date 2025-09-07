@@ -164,6 +164,7 @@ body {
     justify-content: center;
     opacity: 1;
     transform: translateY(5px);
+    margin-right: 8px;
   
     transition:
       opacity   220ms var(--ease-in-circ),
