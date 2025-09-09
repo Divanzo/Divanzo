@@ -80,10 +80,12 @@ body {
     font-weight: bold;
     cursor: pointer;
     margin: 0 8px;
+    margin-left: 12px;
 
     transform: rotate(0deg);
     transition: transform 300ms var(--ease-in-circ);
   }
+
   .toggle-btn[data-rotated] {
     transform: rotate(180deg);
     transition: transform 300ms var(--ease-out-circ);
