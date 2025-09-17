@@ -1,7 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap');
 
-
-
 /* ========== 공통 스타일 ========== */
 body {
     background: #222;
@@ -194,8 +192,8 @@ body {
     padding: 20px 0 0 0;
   
     transition:
-      opacity   200ms var(--ease-in-circ),
-      transform 200ms var(--ease-in-circ);
+      opacity   1000ms var(--ease-in-circ),
+      transform 900ms var(--ease-in-circ);
   }
   
   .search-box.expanded .menu {
@@ -203,6 +201,39 @@ body {
     transform: translateY(8px);
   
     transition:
-      opacity   200ms var(--ease-out-circ) 200ms,
-      transform 200ms var(--ease-out-circ) 200ms;
+      opacity   1000ms var(--ease-out-circ),
+      transform 900ms var(--ease-out-circ);
+  }
+/* 
+  .extra{
+    height: 0px;
+    opacity: 0;
+
+    transition:
+      opacity   200ms var(--ease-out-circ) 10ms,
+      transform 200ms var(--ease-out-circ) 10ms;
+  }
+  .search-box.expanded .extra{
+    opacity: 1;
+    height: 200px;
+    transition: 
+      height 700ms var(--ease-out-circ) 10ms;
+      opacity: 700ms var(--ease-out-circ) 10ms;
+  } */
+
+  .extra {
+    height: 0px;
+    opacity: 0;
+    overflow: hidden; /* 내용 튀어나오는 것 방지 */
+    transition:
+      height 500ms var(--ease-in-circ),
+      opacity 300ms var(--ease-in-circ);
+  }
+  
+  .search-box.expanded .extra {
+    height: 200px;
+    opacity: 1;
+    transition:
+      height 1300ms var(--ease-out-circ),
+      opacity 400ms var(--ease-out-circ) 100ms; /* 살짝 딜레이 주면 자연스러움 */
   }

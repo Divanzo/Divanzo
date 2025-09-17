@@ -1,4 +1,0 @@
-([('BHS',
-   '/Users/dvanzo/DGSW 모든 자료/1310 수업 자료/프로그래밍/OYJ '
-   'programming/OYJ programming/dist/BHS',
-   'EXECUTABLE')],)
